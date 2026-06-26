@@ -1,5 +1,5 @@
 {
-  "server_url": "http://172.30.0.46:8000",
+  "server_url": "http://172.30.0.70:8000",
   "serial_port": "COM6",
   "baud_rate": 9600
 }

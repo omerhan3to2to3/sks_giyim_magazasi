@@ -91,6 +91,19 @@ Serial Monitor (9600 baud) açıldığında `RFID:HAZIR` görünmeli; kart okutu
 
 Para Yükleme sayfasının altındaki **Simüle Et** alanına test kart UID'si yazarak deneme yapabilirsiniz.
 
+## Demo / Sunum Verileri
+
+Sunumda dolu bir ekran göstermek için hazır mock veriler oluşturabilirsiniz (8 müşteri, 12 ürün + görsel, bakiye yüklemeleri ve satışlar):
+
+```bat
+python -m server.seed_data            :: veritabanı boşsa doldurur
+python -m server.seed_data --reset    :: mevcut verileri silip yeniden oluşturur
+```
+
+Hazır test kart UID'leri (Simüle Et alanına yazılabilir): `A1B2C3D4`, `B2C3D4E5`, `C3D4E5F6` ...
+
+> Ürün görselleri için `pillow` gerekir (`pip install pillow`). Kurulu değilse ürünler görselsiz oluşturulur.
+
 ## Proje Yapısı
 
 ```
